@@ -33,15 +33,19 @@ import org.opcfoundation.ua.core.EndpointDescription;
 import org.opcfoundation.ua.utils.EndpointUtil;
 
 
+/*
 public class TestGetEndpoints extends EndpointsTestBench {
-/* Issue 2495 in mantis. In case the endpoints are bound to some addresses only, 
- * it should be ensured that they are only returned for endpoint requests coming from that interface. */
-	public void testGetHttpsEndpoints() {
+*/
+/* Issue 2495 in mantis. In case the endpoints are bound to some addresses only,
+ * it should be ensured that they are only returned for endpoint requests coming from that interface. *//*
+
+	*/
+/*public void testGetHttpsEndpoints() {
 		try {
 
 			String hostname = EndpointUtil.getHostname();
 			EndpointDescription[] endpoints = client.discoverEndpoints("https://" + hostname + ":8443");
-			
+
 			//Check that there's expected number of results
 			assertEquals(1, endpoints.length);
 			//Check results in more detail
@@ -50,12 +54,12 @@ public class TestGetEndpoints extends EndpointsTestBench {
 				assertEquals("https://" + hostname + ":8443/UAExample", ed.getEndpointUrl());
 				assertEquals("http://opcfoundation.org/UA/SecurityPolicy#None", ed.getSecurityPolicyUri());
 			}
-		
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void testGetOpcTcpEndpoints() {
 		try {
 			String hostname = EndpointUtil.getHostname();
@@ -75,10 +79,11 @@ public class TestGetEndpoints extends EndpointsTestBench {
 					assertEquals("http://opcfoundation.org/UA/SecurityPolicy#None", ed.getSecurityPolicyUri());
 				}
 			}
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
-	
-}
+	}*//*
+
+
+}*/

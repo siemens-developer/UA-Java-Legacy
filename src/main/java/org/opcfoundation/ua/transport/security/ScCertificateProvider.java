@@ -34,26 +34,26 @@ import org.opcfoundation.ua.utils.CryptoUtil;
 import org.opcfoundation.ua.utils.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.spongycastle.asn1.x500.X500Name;
-import org.spongycastle.asn1.x509.AuthorityKeyIdentifier;
-import org.spongycastle.asn1.x509.BasicConstraints;
-import org.spongycastle.asn1.x509.ExtendedKeyUsage;
-import org.spongycastle.asn1.x509.Extension;
-import org.spongycastle.asn1.x509.GeneralName;
-import org.spongycastle.asn1.x509.GeneralNames;
-import org.spongycastle.asn1.x509.KeyPurposeId;
-import org.spongycastle.asn1.x509.KeyUsage;
-import org.spongycastle.cert.jcajce.JcaX509CertificateConverter;
-import org.spongycastle.cert.jcajce.JcaX509ExtensionUtils;
-import org.spongycastle.cert.jcajce.JcaX509v3CertificateBuilder;
-import org.spongycastle.openssl.PEMEncryptor;
-import org.spongycastle.openssl.jcajce.JcaPEMWriter;
-import org.spongycastle.openssl.jcajce.JcePEMEncryptorBuilder;
-import org.spongycastle.operator.ContentSigner;
-import org.spongycastle.operator.OperatorCreationException;
-import org.spongycastle.operator.jcajce.JcaContentSignerBuilder;
-import org.spongycastle.util.encoders.Base64;
-import org.spongycastle.x509.extension.X509ExtensionUtil;
+import org.bouncycastle.asn1.x500.X500Name;
+import org.bouncycastle.asn1.x509.AuthorityKeyIdentifier;
+import org.bouncycastle.asn1.x509.BasicConstraints;
+import org.bouncycastle.asn1.x509.ExtendedKeyUsage;
+import org.bouncycastle.asn1.x509.Extension;
+import org.bouncycastle.asn1.x509.GeneralName;
+import org.bouncycastle.asn1.x509.GeneralNames;
+import org.bouncycastle.asn1.x509.KeyPurposeId;
+import org.bouncycastle.asn1.x509.KeyUsage;
+import org.bouncycastle.cert.jcajce.JcaX509CertificateConverter;
+import org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils;
+import org.bouncycastle.cert.jcajce.JcaX509v3CertificateBuilder;
+import org.bouncycastle.openssl.PEMEncryptor;
+import org.bouncycastle.openssl.jcajce.JcaPEMWriter;
+import org.bouncycastle.openssl.jcajce.JcePEMEncryptorBuilder;
+import org.bouncycastle.operator.ContentSigner;
+import org.bouncycastle.operator.OperatorCreationException;
+import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
+import org.bouncycastle.util.encoders.Base64;
+import org.bouncycastle.x509.extension.X509ExtensionUtil;
 
 /**
  * <p>ScCertificateProvider class.</p>
@@ -65,7 +65,7 @@ public class ScCertificateProvider implements CertificateProvider {
 
 	public ScCertificateProvider() {
 		//Ensure SC is loaded
-		CryptoUtil.loadOrInstallProvider("SC", "org.spongycastle.jce.provider.BouncyCastleProvider");
+		CryptoUtil.loadOrInstallProvider("SC", "org.bouncycastle.jce.provider.BouncyCastleProvider");
 	}
 	
 	/**

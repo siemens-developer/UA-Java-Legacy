@@ -30,23 +30,23 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.opcfoundation.ua.transport.security.KeyPair;
 
-import org.spongycastle.x509.extension.X509ExtensionUtil;
-import org.spongycastle.asn1.x509.Extension;
-import org.spongycastle.asn1.x509.AuthorityKeyIdentifier;
-import org.spongycastle.cert.jcajce.JcaX509v3CertificateBuilder;
-import org.spongycastle.operator.ContentSigner;
-import org.spongycastle.asn1.x500.X500Name;
-import org.spongycastle.asn1.x509.BasicConstraints;
-import org.spongycastle.asn1.x509.ExtendedKeyUsage;
-import org.spongycastle.asn1.x509.GeneralName;
-import org.spongycastle.asn1.x509.GeneralNames;
-import org.spongycastle.asn1.x509.KeyPurposeId;
-import org.spongycastle.asn1.x509.KeyUsage;
-import org.spongycastle.cert.jcajce.JcaX509CertificateConverter;
-import org.spongycastle.cert.jcajce.JcaX509ExtensionUtils;
-import org.spongycastle.operator.OperatorCreationException;
-import org.spongycastle.operator.jcajce.JcaContentSignerBuilder;
-import org.spongycastle.util.encoders.Base64;
+import org.bouncycastle.x509.extension.X509ExtensionUtil;
+import org.bouncycastle.asn1.x509.Extension;
+import org.bouncycastle.asn1.x509.AuthorityKeyIdentifier;
+import org.bouncycastle.cert.jcajce.JcaX509v3CertificateBuilder;
+import org.bouncycastle.operator.ContentSigner;
+import org.bouncycastle.asn1.x500.X500Name;
+import org.bouncycastle.asn1.x509.BasicConstraints;
+import org.bouncycastle.asn1.x509.ExtendedKeyUsage;
+import org.bouncycastle.asn1.x509.GeneralName;
+import org.bouncycastle.asn1.x509.GeneralNames;
+import org.bouncycastle.asn1.x509.KeyPurposeId;
+import org.bouncycastle.asn1.x509.KeyUsage;
+import org.bouncycastle.cert.jcajce.JcaX509CertificateConverter;
+import org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils;
+import org.bouncycastle.operator.OperatorCreationException;
+import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
+import org.bouncycastle.util.encoders.Base64;
 
 /**
  * SpongyCastle specific implementations of certain Crypto Utilities.

@@ -19,7 +19,6 @@ import org.opcfoundation.ua.core.ApplicationDescription;
  * Certificate Validator estimates the validity of a certificate.
  *
  * @see AllowAllCertificatesValidator
- * @see DefaultCertificateValidator 
  */
 public interface CertificateValidator {
 	

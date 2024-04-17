@@ -26,32 +26,32 @@ import org.opcfoundation.ua.utils.CryptoUtil;
 import org.opcfoundation.ua.utils.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.spongycastle.asn1.pkcs.RSAPrivateKey;
-import org.spongycastle.asn1.pkcs.RSAPublicKey;
-import org.spongycastle.crypto.AsymmetricBlockCipher;
-import org.spongycastle.crypto.BufferedBlockCipher;
-import org.spongycastle.crypto.CipherParameters;
-import org.spongycastle.crypto.CryptoException;
-import org.spongycastle.crypto.DataLengthException;
-import org.spongycastle.crypto.InvalidCipherTextException;
-import org.spongycastle.crypto.Signer;
-import org.spongycastle.crypto.digests.SHA1Digest;
-import org.spongycastle.crypto.digests.SHA256Digest;
-import org.spongycastle.crypto.encodings.OAEPEncoding;
-import org.spongycastle.crypto.encodings.PKCS1Encoding;
-import org.spongycastle.crypto.engines.AESEngine;
-import org.spongycastle.crypto.engines.RSAEngine;
-import org.spongycastle.crypto.engines.RijndaelEngine;
-import org.spongycastle.crypto.macs.HMac;
-import org.spongycastle.crypto.modes.CBCBlockCipher;
-import org.spongycastle.crypto.modes.SICBlockCipher;
-import org.spongycastle.crypto.params.KeyParameter;
-import org.spongycastle.crypto.params.ParametersWithIV;
-import org.spongycastle.crypto.params.RSAKeyParameters;
-import org.spongycastle.crypto.params.RSAPrivateCrtKeyParameters;
-import org.spongycastle.crypto.signers.PSSSigner;
-import org.spongycastle.crypto.signers.RSADigestSigner;
-import org.spongycastle.util.encoders.Base64;
+import org.bouncycastle.asn1.pkcs.RSAPrivateKey;
+import org.bouncycastle.asn1.pkcs.RSAPublicKey;
+import org.bouncycastle.crypto.AsymmetricBlockCipher;
+import org.bouncycastle.crypto.BufferedBlockCipher;
+import org.bouncycastle.crypto.CipherParameters;
+import org.bouncycastle.crypto.CryptoException;
+import org.bouncycastle.crypto.DataLengthException;
+import org.bouncycastle.crypto.InvalidCipherTextException;
+import org.bouncycastle.crypto.Signer;
+import org.bouncycastle.crypto.digests.SHA1Digest;
+import org.bouncycastle.crypto.digests.SHA256Digest;
+import org.bouncycastle.crypto.encodings.OAEPEncoding;
+import org.bouncycastle.crypto.encodings.PKCS1Encoding;
+import org.bouncycastle.crypto.engines.AESEngine;
+import org.bouncycastle.crypto.engines.RSAEngine;
+import org.bouncycastle.crypto.engines.RijndaelEngine;
+import org.bouncycastle.crypto.macs.HMac;
+import org.bouncycastle.crypto.modes.CBCBlockCipher;
+import org.bouncycastle.crypto.modes.SICBlockCipher;
+import org.bouncycastle.crypto.params.KeyParameter;
+import org.bouncycastle.crypto.params.ParametersWithIV;
+import org.bouncycastle.crypto.params.RSAKeyParameters;
+import org.bouncycastle.crypto.params.RSAPrivateCrtKeyParameters;
+import org.bouncycastle.crypto.signers.PSSSigner;
+import org.bouncycastle.crypto.signers.RSADigestSigner;
+import org.bouncycastle.util.encoders.Base64;
 
 /**
  * <p>ScCryptoProvider class.</p>
@@ -66,7 +66,7 @@ public class ScCryptoProvider implements CryptoProvider {
 	 */
 	public ScCryptoProvider() {
 		//Ensure SC is loaded
-		CryptoUtil.loadOrInstallProvider("SC", "org.spongycastle.jce.provider.BouncyCastleProvider");
+		CryptoUtil.loadOrInstallProvider("SC", "org.bouncycastle.jce.provider.BouncyCastleProvider");
 	}
 
 	/** {@inheritDoc} */

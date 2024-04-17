@@ -23,7 +23,7 @@ public class ScJceCryptoProvider extends JceCryptoProvider implements CryptoProv
 	 * <p>Constructor for ScJceCryptoProvider.</p>
 	 */
 	public ScJceCryptoProvider() {
-		super(CryptoUtil.loadOrInstallProvider("SC", "org.spongycastle.jce.provider.BouncyCastleProvider"));
+		super(CryptoUtil.loadOrInstallProvider("SC", "org.bouncycastle.jce.provider.BouncyCastleProvider"));
 	}
 
 }

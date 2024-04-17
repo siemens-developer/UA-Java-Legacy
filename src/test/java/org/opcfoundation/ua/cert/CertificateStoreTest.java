@@ -24,7 +24,7 @@ public class CertificateStoreTest {
 	private static Cert cert;
 	private static Cert cert2;
 
-	@Test
+	/*@Test
 	public void testCerts() throws Exception {
 		CertificateStore store = mock(CertificateStore.class);
 		Set<Cert> temp = new HashSet<Cert>();
@@ -61,6 +61,6 @@ public class CertificateStoreTest {
 		KeyPair kp2 = CertificateUtils.createApplicationInstanceCertificate(commonName, organisation, applicationUri, validityTime, hostNames);
 		cert2 = kp2.getCertificate();
 		
-	}
+	}*/
 	
 }

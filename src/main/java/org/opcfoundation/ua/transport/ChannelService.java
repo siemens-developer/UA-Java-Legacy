@@ -208,8 +208,6 @@ public class ChannelService {
      * @param LocaleIds
      * @param ServerUris
      * @return monitorable asyncronous result object
-     * @throws ServiceFaultException on error while executing the operation
-     * @throws ServiceResultException on communication error
      */
     public AsyncResult FindServersAsync(RequestHeader RequestHeader, String EndpointUrl, String[] LocaleIds, String... ServerUris)
     {
