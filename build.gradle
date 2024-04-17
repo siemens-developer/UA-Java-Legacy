@@ -32,7 +32,7 @@ dependencies {
 }
 
 group = 'org.opcfoundation.ua'
-version = '1.4.1.1-SNAPSHOT'
+version = '1.5.0'
 description = 'OPC Foundation Unified Architecture Java Stack'
 java.sourceCompatibility = JavaVersion.VERSION_17
 java.targetCompatibility = JavaVersion.VERSION_17
